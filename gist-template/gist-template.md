@@ -37,9 +37,9 @@ The folder will look something similar to this.
 
 ### Set up
 
-once flask is installed you can begin coding. In the root directory (or main folder) of your project, create a new directory called app. In this directory, create a new file called __init__.py. That's two underscores on each side. 
+once flask is installed you can begin coding. In the root directory (or main folder) of your project, create a new directory called app. In this directory, create a new file called `__init__.py`. That's two underscores on each side. 
 
-**__init.py__** is an important file that's used in Python projects, and it is typically found in every directory, including the root directory of a Python package. It serves several key purposes. Firstly, it acts as an entry point to the directory in a similar way that one might use an index.js file in a JavaScript project to define the entry point for a module or package however when the __init__.py is in the root directory it can be seen as the server.js equivalent. Secondly, __init__.py is essential for Package Initialization. When a package is imported, the __init__.py file is executed. This allows you to perform any necessary package initialization tasks, such as setting up variables, importing modules, or defining package functions and classes. Anything you place in the __init__.py file is executed when the package is first imported. Here's a sample code example to illustrate its usage:
+**`__init__.py`** is an important file that's used in Python projects, and it is typically found in every directory, including the root directory of a Python package. It serves several key purposes. Firstly, it acts as an entry point to the directory in a similar way that one might use an index.js file in a JavaScript project to define the entry point for a module or package however when the `__init__.py` is in the root directory it can be seen as the server.js equivalent. Secondly, `__init__.py` is essential for Package Initialization. When a package is imported, the `__init__.py` file is executed. This allows you to perform any necessary package initialization tasks, such as setting up variables, importing modules, or defining package functions and classes. Anything you place in the `__init__.py` file is executed when the package is first imported. Here's a sample code example to illustrate its usage:
 
 ```
 from flask import Flask
@@ -72,7 +72,7 @@ def create_app(test_config=None):
 ```
 #### imports
 
-As soon as __init__.py runs it starts to import the necessary modules and packages. it imports flask from Flask, imports home, dashboard, api files from the routes folder which is inside the root folder called app, imports init_db module from db folder which is inside app, and imports the filter file from the utils folder which is inside of the app folder.
+As soon as `__init__.py` runs it starts to import the necessary modules and packages. it imports flask from Flask, imports home, dashboard, api files from the routes folder which is inside the root folder called app, imports init_db module from db folder which is inside app, and imports the filter file from the utils folder which is inside of the app folder.
 
 ####  Create_app()
 
