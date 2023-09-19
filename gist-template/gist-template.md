@@ -70,7 +70,7 @@ def create_app(test_config=None):
   init_db(app)
   return app
 ```
-#### imports
+#### Imports
 
 As soon as `__init__.py` runs it starts to import the necessary modules and packages. it imports flask from Flask, imports home, dashboard, api files from the routes folder which is inside the root folder called app, imports init_db module from db folder which is inside app, and imports the filter file from the utils folder which is inside of the app folder.
 
