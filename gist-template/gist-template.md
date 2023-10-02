@@ -90,7 +90,7 @@ Lets break down the next line `app.config.from_mapping( SECRET_KEY='super_secret
 
 #### Registering Jinja Filters
 
-These lines register custom Jinja2 template filters. The app.jinja_env.filters dictionary is used to add custom filters, which can be accessed within your templates to format data.
+After the configuration in the create_app function we have three lines that are all similar and follow this template `app.jinja_env.filters['filter name'] = file where the filter is located.function name` what this is doing is calling app which is an instance of flask and then calling jinja_env.filters dictionary (which is a type of class in python) the [''] is the name of the custom filter your adding. The functionality for the custom filter is given here `= file where the filter is located.function name`  this part tells Flask where to find that function. In summary the purpose of these lines is to enhance the functionality of Jinja2 templates within the Flask application. By adding custom filters, you're extending the capabilities of Jinja2, making it easier to format and manipulate data within your templates.
 
 #### Route Definitions
 
