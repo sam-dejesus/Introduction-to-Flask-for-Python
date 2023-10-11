@@ -94,7 +94,9 @@ After the configuration in the create_app function we have three lines that are 
 
 #### Route Definitions
 
-This defines a simple route /hello that responds with "hello world" when accessed. The @app.route() decorator associates the function hello() with the URL path /hello.
+In the next code block we see simple route definition. `@app.route('/hello')` is a decorator in Flask that is used to bind a function to a specific URL. In this case, it specifies that the function immediately following it should be executed when a user accesses the "/hello" endpoint. the `def hello():` functhion will be responsible for handling the request. The `return 'hello world'` inside the `def hello():` function will return the response that will be sent back to the user's browser. In this case, it simply returns the text "hello world.".
+this example is simple one but route definitions can get more complicated as you will see with further examples.
+
 
 #### Registering Blueprints
 
